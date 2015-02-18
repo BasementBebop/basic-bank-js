@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.2.js"></script>
+    <script src="js/bank-scripts.js"></script>
+    <title>Bank</title>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Welcome to the Bank bitch!</h3>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <p>Sign up for a bank account:</p>
+          <br>
+          <form id="new-account">
+            <div class="form-group">
+              <input type="text" class="form-control" id="new-name" placeholder="Your name" required autofocus>
+            </div>
+
+            <div class="form-group">
+              <input type="text" class="form-control" id="initial-deposit" placeholder="Initial deposit" pattern="\d*">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Create account</button>
+          </form>
+        </div>
+
+        <div class="col-sm-5">
+          <p>Deposit or withdraw money:</p>
+          <br>
+          <form id="transaction">
+            <div class="form-group">
+              <input type="text" class="form-control" id="new-deposit" placeholder="Deposit amount" pattern="\d*">
+            </div>
+
+            <div class="form-group">
+              <input type="text" class="form-control" id="new-withdrawl" placeholder="Withdraw amount" pattern="\d*">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Transact</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6" id="secondrow">
+          <h4>Your bank account's total balance:</h4>
+          <h1><span class="balance"></span></h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
